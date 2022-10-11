@@ -90,7 +90,7 @@ rtt min/avg/max/mdev = 0.469/0.587/0.696/0.094 ms
  ```
  [root@john fg331]# tcpdump -i enp0s3 -c 10 -w /root/ARP-Ping-VMs.pcap not port 22
  ```  
-  [fichier obtenue](/wireshark/tp2_arp.pcapng) contenant un ARP request et ARP reply (les 2 premières trames) suivis des pings
+  [fichier obtenue](wireshark/tp2_arp.pcapng) contenant un ARP request et ARP reply (les 2 premières trames) suivis des pings
 
 # II. Routage
 
@@ -194,7 +194,7 @@ PING 10.3.2.12 (10.3.2.12) 56(84) bytes of data.
 | 8     | Pong        |  `marcel` `10.3.2.12`        | `router` `08:00:27:a4:35:32`                       | `john` `10.3.1.11`              | `john` `08:00:27:17:b5:61`                          |  
 
 
-- **Capture sur Marcel : [`tp2_routage_marcel.pcapng`](./pcp/tp2_routage_marcel.pcapng)**
+- **Capture sur Marcel : [`tp2_routage_marcel.pcapng`](wireshark/tp2_routage_marcel.pcapng)**
 
 ## 3. Accès Internet
 
@@ -327,7 +327,7 @@ PING 10.3.2.12 (10.3.2.12) 56(84) bytes of data.
 | 1     | ping       | `john` `10.3.1.12` | `john` `08:00:27:17:b5:61` | `8.8.8.8`      | `router` `08:00:27:a4:35:32`               |     |
 | 2     | pong       | `8.8.8.8`                | `router` `08:00:27:a4:35:32`                     | `john` `10.3.1.12`            | `john` `08:00:27:17:b5:61`             |     |  
 
-**Capture du ping :** [tp2_routage_internet.pcapng](/wireshark/tp2_routage_internet.pcapng)
+**Capture du ping :** [tp2_routage_internet.pcapng](wireshark/tp2_routage_internet.pcapng)
 
 
 # III. DHCP
@@ -490,4 +490,4 @@ rtt min/avg/max/mdev = 13.845/16.237/19.166/1.916 ms
 
 ## 2. Analyse de trames :  
 
-[tp2_dhcp.pcapng](/wireshark/tp2_dhcp.pcapng)
+[tp2_dhcp.pcapng](wireshark/tp2_dhcp.pcapng)
